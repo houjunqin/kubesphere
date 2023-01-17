@@ -470,14 +470,14 @@ func (s *APIServer) waitForResourceSync(ctx context.Context) error {
 		{Group: "batch", Version: "v1"}: {
 			"jobs",
 		},
-		{Group: "batch", Version: "v1beta1"}: {
+		{Group: "batch", Version: "v1"}: {
 			"cronjobs",
 		},
 		{Group: "networking.k8s.io", Version: "v1"}: {
 			"ingresses",
 			"networkpolicies",
 		},
-		{Group: "autoscaling", Version: "v2beta2"}: {
+		{Group: "autoscaling", Version: "v2"}: {
 			"horizontalpodautoscalers",
 		},
 	}
